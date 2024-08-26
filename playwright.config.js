@@ -13,7 +13,7 @@ const config = {
     ],
     reporter: [
         ['list'],
-        ['html', { open: 'never' }]
+        ['html', { open: 'never' }],
         ['allure-playwright']
     ]
 };
