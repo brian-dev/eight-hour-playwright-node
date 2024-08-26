@@ -1,0 +1,17 @@
+{
+  "name": "eight-hour-playwright-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.46.1",
+    "allure-playwright": "^3.0.0-beta.10",
+    "playwright": "^1.46.1"
+  }
+}
