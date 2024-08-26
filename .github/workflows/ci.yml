@@ -11,28 +11,39 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20' # Use Node.js 20
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run Playwright Tests
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
+      - name: Run Playwright tests
         run: npx playwright test
 
       - name: Generate Allure Report
-        run: |
-          npx allure generate allure-results --clean
-        continue-on-error: true
+        run: npx allure generate allure-results --clean -o allure-report
 
       - name: Upload Allure Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: allure-report
           path: allure-report
+
+      - name: Upload Allure Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
