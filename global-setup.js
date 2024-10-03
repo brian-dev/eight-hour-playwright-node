@@ -92,7 +92,7 @@ async function globalSetup() {
 
         // Step 2: Start the Express server using the child process
         console.log('Starting the server...');
-        const serverPath = path.join(__dirname, 'server.js');
+        const serverPath = path.join(__dirname, 'api-server/server.js');
         global.serverProcess = spawn('node', [serverPath], { stdio: 'inherit' });
         console.log('Global setup completed successfully.');
     } catch (error) {
