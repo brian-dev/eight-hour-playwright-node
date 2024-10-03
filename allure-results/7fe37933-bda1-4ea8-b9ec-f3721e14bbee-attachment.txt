@@ -1,0 +1,92 @@
+Error executing query: error: duplicate key value violates unique constraint "users_email_key"
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/pg/lib/client.js:526:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at executeQuery (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:17:16)
+    at insertUser (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:59:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/tests/db.test.js:20:9
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/fixtureRunner.js:254:7
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:53:14)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at FixtureRunner.resolveParametersAndRunFunction (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/fixtureRunner.js:250:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:541:13
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at WorkerMain._runAllHooksForSuite (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:522:9)
+    at WorkerMain._runBeforeAllHooksForSuite (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:515:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:316:37
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:309:7
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at WorkerMain._runTest (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:281:5)
+    at WorkerMain.runTestGroup (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:205:11)
+    at process.<anonymous> (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/common/process.js:95:22) {
+  length: 212,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(john.doe@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}
+Error during setup: error: duplicate key value violates unique constraint "users_email_key"
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/pg/lib/client.js:526:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at executeQuery (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:17:16)
+    at insertUser (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:59:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/tests/db.test.js:20:9
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/fixtureRunner.js:254:7
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:53:14)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at FixtureRunner.resolveParametersAndRunFunction (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/fixtureRunner.js:250:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:541:13
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at WorkerMain._runAllHooksForSuite (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:522:9)
+    at WorkerMain._runBeforeAllHooksForSuite (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:515:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:316:37
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:309:7
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at WorkerMain._runTest (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:281:5)
+    at WorkerMain.runTestGroup (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:205:11)
+    at process.<anonymous> (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/common/process.js:95:22) {
+  length: 212,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(john.doe@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}

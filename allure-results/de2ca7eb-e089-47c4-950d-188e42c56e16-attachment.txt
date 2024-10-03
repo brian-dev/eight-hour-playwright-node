@@ -1,0 +1,2 @@
+Error fetching tables: Request failed with status code 500
+Error creating user: Request failed with status code 500

@@ -1,0 +1,13 @@
+Connected to PostgreSQL
+Disconnected from PostgreSQL
+Table 'users' created successfully!
+Table creation complete.
+Connected to PostgreSQL
+Disconnected from PostgreSQL
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 1760,
+  [Symbol(trigger_async_id_symbol)]: 1725,
+  [Symbol(kResourceStore)]: undefined
+}
+Connected to PostgreSQL

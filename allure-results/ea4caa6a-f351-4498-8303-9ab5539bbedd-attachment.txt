@@ -1,0 +1,2 @@
+Error during test setup: Request failed with status code 500
+Error deleting user 'john.doe@example.com': deleteUserByEmail is not a function

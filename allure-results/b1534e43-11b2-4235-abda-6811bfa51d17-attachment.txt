@@ -1,0 +1,10 @@
+Connected to PostgreSQL
+Disconnected from PostgreSQL
+Table 'users' created successfully!
+Table creation complete.
+Connected to PostgreSQL
+Disconnected from PostgreSQL
+User 'John' 'Doe with email 'john.doe@example.com' added successfully!
+User insertion complete.
+Connected to PostgreSQL
+Disconnected from PostgreSQL

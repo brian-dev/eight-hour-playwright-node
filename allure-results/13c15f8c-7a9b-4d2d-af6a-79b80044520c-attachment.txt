@@ -1,0 +1,6 @@
+Connected to PostgreSQL test_database
+Disconnected from PostgreSQL test_database
+No user found with email 'john.doe@example.com' in test_database
+Connected to PostgreSQL test_database
+Disconnected from PostgreSQL test_database
+No user found with email 'john.doe@example.com' in test_database

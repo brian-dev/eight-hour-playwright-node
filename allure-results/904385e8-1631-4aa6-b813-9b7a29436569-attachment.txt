@@ -1,0 +1,1 @@
+Error deleting user 'john.doe@example.com': deleteUserByEmail is not a function

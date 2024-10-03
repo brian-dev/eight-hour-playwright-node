@@ -1,0 +1,2 @@
+Connected to PostgreSQL
+Database 'test_database' created successfully!

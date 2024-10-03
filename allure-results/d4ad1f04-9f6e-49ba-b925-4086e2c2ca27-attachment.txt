@@ -1,0 +1,44 @@
+Error inserting user: error: duplicate key value violates unique constraint "users_email_key"
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/pg/lib/client.js:526:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at insertUser (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:79:9) {
+  length: 212,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(john.doe@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}
+Error: error: duplicate key value violates unique constraint "users_email_key"
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/pg/lib/client.js:526:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at insertUser (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:79:9) {
+  length: 212,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(john.doe@example.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}

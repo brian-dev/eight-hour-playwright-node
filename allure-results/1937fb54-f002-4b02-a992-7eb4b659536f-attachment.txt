@@ -1,0 +1,8 @@
+Connected to PostgreSQL to create table 'users'
+Table 'users' created successfully!
+Disconnected from PostgreSQL
+Table creation complete.
+Connected to PostgreSQL to insert user
+User 'John Doe' with email 'john.doe@example.com' added successfully!
+Disconnected from PostgreSQL
+User insertion complete.

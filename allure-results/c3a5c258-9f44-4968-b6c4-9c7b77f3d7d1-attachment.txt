@@ -1,0 +1,9 @@
+Connected to PostgreSQL
+Disconnected from PostgreSQL
+Table 'users' created successfully!
+Table creation complete.
+Connected to PostgreSQL
+Disconnected from PostgreSQL
+undefined
+Connected to PostgreSQL
+Disconnected from PostgreSQL

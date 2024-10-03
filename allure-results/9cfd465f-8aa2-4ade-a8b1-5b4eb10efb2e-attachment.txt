@@ -1,0 +1,45 @@
+Error creating database: error: duplicate key value violates unique constraint "pg_database_datname_index"
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/pg-pool/index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at createDatabase (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/database/db.js:20:9)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/tests/db.test.js:6:5
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/fixtureRunner.js:254:7
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:53:14)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at FixtureRunner.resolveParametersAndRunFunction (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/fixtureRunner.js:250:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:541:13
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at WorkerMain._runAllHooksForSuite (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:522:9)
+    at WorkerMain._runBeforeAllHooksForSuite (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:515:5)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:316:37
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:309:7
+    at /Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:296:11
+    at TimeoutManager.withRunnable (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/timeoutManager.js:41:27)
+    at TestInfoImpl._runAsStage (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/testInfo.js:294:7)
+    at WorkerMain._runTest (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:281:5)
+    at WorkerMain.runTestGroup (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/worker/workerMain.js:205:11)
+    at process.<anonymous> (/Users/brianrichardson/Documents/github/eight-hour-playwright-node/node_modules/playwright/lib/common/process.js:95:22) {
+  length: 237,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (datname)=(test_database) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'pg_catalog',
+  table: 'pg_database',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'pg_database_datname_index',
+  file: 'nbtinsert.c',
+  line: '673',
+  routine: '_bt_check_unique'
+}

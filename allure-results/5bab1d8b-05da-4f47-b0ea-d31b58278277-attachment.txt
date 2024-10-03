@@ -1,0 +1,5 @@
+Tables fetched successfully: []
+Connected to PostgreSQL test_database
+Disconnected from PostgreSQL test_database
+Connected to PostgreSQL test_database
+Disconnected from PostgreSQL test_database
